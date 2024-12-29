@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Price Prediction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Predict Property Price</h1>
+
+        <form id="property-form">
+            <div class="form-group">
+                <label for="lotdepth">Lot Depth:</label>
+                <input type="number" step="0.1" class="form-control" id="lotdepth" name="lotdepth" required>
+            </div>
+
+            <div class="form-group">
+                <label for="community">Community:</label>
+                <select class="form-control" id="community" name="community" required>
+                    <option value="Bendale">Bendale</option>
+                    <option value="Niagara">Niagara</option>
+                    <option value="South Riverdale">South Riverdale</option>
+                    <option value="Malvern">Malvern</option>
+                    <option value="Annex">Annex</option>
+                    <option value="Waterfront Communities C1">Waterfront Communities C1</option>
+                    <option value="Mimico">Mimico</option>
+                    <option value="Other">Other</option>
+                    <option value="Rosedale-Moore Park">Rosedale-Moore Park</option>
+                    <option value="Mount Olive-Silverstone-Jamestown">Mount Olive-Silverstone-Jamestown</option>
+                    <option value="L'Amoreaux">L'Amoreaux</option>
+                    <option value="Willowdale West">Willowdale West</option>
+                    <option value="Willowdale East">Willowdale East</option>
+                    <option value="West Humber-Clairville">West Humber-Clairville</option>
+                    <option value="Church-Yonge Corridor">Church-Yonge Corridor</option>
+                    <option value="Islington-City Centre West">Islington-City Centre West</option>
+                    <option value="Mount Pleasant West">Mount Pleasant West</option>
+                    <option value="Agincourt South-Malvern West">Agincourt South-Malvern West</option>
+                    <option value="Bay Street Corridor">Bay Street Corridor</option>
+                    <option value="Flemingdon Park">Flemingdon Park</option>
+                    <option value="Woburn">Woburn</option>
+                    <option value="Bayview Village">Bayview Village</option>
+                    <option value="Newtonbrook East">Newtonbrook East</option>
+                    <option value="Banbury-Don Mills">Banbury-Don Mills</option>
+                    <option value="Dorset Park">Dorset Park</option>
+                    <option value="Moss Park">Moss Park</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="washrooms">Washrooms:</label>
+                <input type="number" class="form-control" id="washrooms" name="washrooms" required>
+            </div>
+
+            <div class="form-group">
+                <label for="brokerage">Brokerage:</label>
+                <select class="form-control" id="brokerage" name="brokerage" required>
+                    <option value="Other">Other</option>
+                    <option value="RE/MAX CROSSROADS REALTY INC., BROKERAGE">RE/MAX CROSSROADS REALTY INC., BROKERAGE</option>
+                    <option value="CHESTNUT PARK REAL ESTATE LIMITED, BROKERAGE">CHESTNUT PARK REAL ESTATE LIMITED, BROKERAGE</option>
+                    <option value="HOMELIFE LANDMARK REALTY INC., BROKERAGE">HOMELIFE LANDMARK REALTY INC., BROKERAGE</option>
+                    <option value="HOMELIFE NEW WORLD REALTY INC., BROKERAGE">HOMELIFE NEW WORLD REALTY INC., BROKERAGE</option>
+                    <option value="CENTURY 21 LEADING EDGE REALTY INC., BROKERAGE">CENTURY 21 LEADING EDGE REALTY INC., BROKERAGE</option>
+                    <option value="RE/MAX REALTRON REALTY INC., BROKERAGE">RE/MAX REALTRON REALTY INC., BROKERAGE</option>
+                    <option value="ROYAL LEPAGE SIGNATURE REALTY, BROKERAGE">ROYAL LEPAGE SIGNATURE REALTY, BROKERAGE</option>
+                    <option value="ROYAL LEPAGE/J & D DIVISION, BROKERAGE">ROYAL LEPAGE/J & D DIVISION, BROKERAGE</option>
+                    <option value="ROYAL LEPAGE TERREQUITY REALTY, BROKERAGE">ROYAL LEPAGE TERREQUITY REALTY, BROKERAGE</option>
+                    <option value="RE/MAX HALLMARK REALTY LTD., BROKERAGE">RE/MAX HALLMARK REALTY LTD., BROKERAGE</option>
+                    <option value="FOREST HILL REAL ESTATE INC., BROKERAGE">FOREST HILL REAL ESTATE INC., BROKERAGE</option>
+                    <option value="RE/MAX WEST REALTY INC., BROKERAGE">RE/MAX WEST REALTY INC., BROKERAGE</option>
+                    <option value="RIGHT AT HOME REALTY INC., BROKERAGE">RIGHT AT HOME REALTY INC., BROKERAGE</option>
+                    <option value="HARVEY KALLES REAL ESTATE LTD., BROKERAGE">HARVEY KALLES REAL ESTATE LTD., BROKERAGE</option>
+                    <option value="ROYAL LEPAGE REAL ESTATE SERVICES LTD., BROKERAGE">ROYAL LEPAGE REAL ESTATE SERVICES LTD., BROKERAGE</option>
+                    <option value="KELLER WILLIAMS REFERRED URBAN REALTY, BROKERAGE">KELLER WILLIAMS REFERRED URBAN REALTY, BROKERAGE</option>
+                    <option value="REAL ESTATE HOMEWARD, BROKERAGE">REAL ESTATE HOMEWARD, BROKERAGE</option>
+                    <option value="ROYAL LEPAGE YOUR COMMUNITY REALTY, BROKERAGE">ROYAL LEPAGE YOUR COMMUNITY REALTY, BROKERAGE</option>
+                    <option value="RE/MAX PREMIER INC., BROKERAGE">RE/MAX PREMIER INC., BROKERAGE</option>
+                    <option value="RE/MAX ULTIMATE REALTY INC., BROKERAGE">RE/MAX ULTIMATE REALTY INC., BROKERAGE</option>
+                    <option value="RE/MAX PROFESSIONALS INC., BROKERAGE">RE/MAX PROFESSIONALS INC., BROKERAGE</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sqft">Square Feet:</label>
+                <input type="number" step="0.1" class="form-control" id="sqft" name="sqft" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lotfront">Lot Frontage:</label>
+                <input type="number" step="0.1" class="form-control" id="lotfront" name="lotfront" required>
+            </div>
+
+            <div class="form-group">
+                <label for="type">Type:</label>
+                <select class="form-control" id="type" name="type" required>
+                    <option value="Condo Apt">Condo Apt</option>
+                    <option value="Condo Townhouse">Condo Townhouse</option>
+                    <option value="Other">Other</option>
+                    <option value="Detached">Detached</option>
+                    <option value="Semi-Detached">Semi-Detached</option>
+                    <option value="Att/Row/Twnhouse">Att/Row/Twnhouse</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="kitchens_plus">Kitchens +:</label>
+                <input type="number" class="form-control" id="kitchens_plus" name="kitchens_plus" required>
+            </div>
+
+            <div class="form-group">
+                <label for="style">Style:</label>
+                <select class="form-control" id="style" name="style" required>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Loft">Loft</option>
+                    <option value="2-Storey">2-Storey</option>
+                    <option value="Other">Other</option>
+                    <option value="Stacked Townhse">Stacked Townhse</option>
+                    <option value="Bungalow">Bungalow</option>
+                    <option value="2 1/2 Storey">2 1/2 Storey</option>
+                    <option value="3-Storey">3-Storey</option>
+                    <option value="Bungalow-Raised">Bungalow-Raised</option>
+                    <option value="Multi-Level">Multi-Level</option>
+                    <option value="1 1/2 Storey">1 1/2 Storey</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rooms_plus">Rooms +:</label>
+                <input type="number" class="form-control" id="rooms_plus" name="rooms_plus" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rooms">Rooms:</label>
+                <input type="number" class="form-control" id="rooms" name="rooms" required>
+            </div>
+
+            <div class="form-group">
+                <label for="garage_spaces">Garage Spaces:</label>
+                <input type="number" class="form-control" id="garage_spaces" name="garage_spaces" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parking_spaces">Parking Spaces:</label>
+                <input type="number" class="form-control" id="parking_spaces" name="parking_spaces" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict Price</button>
+        </form>
+
+        <h2 class="mt-4">Predicted Price: <span id="predicted-price">N/A</span></h2>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#property-form').on('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                var formData = {
+                    'lotdepth': $('#lotdepth').val(),
+                    'community': $('#community').val(),
+                    'washrooms': $('#washrooms').val(),
+                    'brokerage': $('#brokerage').val(),
+                    'sqft': $('#sqft').val(),
+                    'lotfront': $('#lotfront').val(),
+                    'type': $('#type').val(),
+                    'kitchens_plus': $('#kitchens_plus').val(),
+                    'style': $('#style').val(),
+                    'rooms_plus': $('#rooms_plus').val(),
+                    'rooms': $('#rooms').val(),
+                    'garage_spaces': $('#garage_spaces').val(),
+                    'parking_spaces': $('#parking_spaces').val(),
+                };
+
+                $.ajax({
+                    url: '/predict_property/',  // Change this URL to your actual Django endpoint
+                    type: 'GET',
+                    data: formData,
+                    success: function(response) {
+                        if (response.predicted_price) {
+                            $('#predicted-price').text('$' + response.predicted_price);
+                        } else if (response.error) {
+                            $('#predicted-price').text('Error: ' + response.error);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        $('#predicted-price').text('Error: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

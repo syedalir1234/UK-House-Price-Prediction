@@ -1,0 +1,400 @@
+﻿Initialized the project log file.
+Added a new feature to the project.
+Analyzed dataset and created visualizations.
+Loading dataset from Google Drive.
+Loading dataset from Google Drive.
+Loading dataset from Google Drive.
+Testing log file
+Features and target defined. target = list_price
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Initializing XGBRegressor model with random state 42
+Performing Recursive Feature Elimination with 10 features
+Performing Recursive Feature Elimination with 10 features
+Performing Recursive Feature Elimination with 10 features
+Initializing XGBRegressor model with random state 42
+Performing Recursive Feature Elimination with 10 features
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Initializing XGBRegressor model with random state 42
+Performing Recursive Feature Elimination with 10 features
+Features count: 10, Selected Features: ['lotdepth', 'community', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces']
+Transforming dataset using RFE
+Transforming dataset using RFE
+Training the model
+Evaluating the model
+Mean Squared Error: 11056861692.576715
+Mean Absolute Error: 42909.16715821997
+R^2 Score: 0.9648709449355688
+Accuracy within 10% tolerance: 73.03%
+
+
+******************************************************
+******************************************************
+******************************************************
+*******************************************
+Performing RFE with 24 features
+Training the model
+Evaluating the model
+MSE: 13989592240.72, RMSE: 118277.61, MAE: 40443.62, MAPE: 12.40%, R^2: 0.9556, Accuracy: 76.16%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'bedrooms_plus', 'washrooms', 'exterior', 'bedrooms_total', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'basement', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 24
+*******************************************
+Performing RFE with 23 features
+Training the model
+Evaluating the model
+MSE: 13828315898.70, RMSE: 117593.86, MAE: 40340.93, MAPE: 12.00%, R^2: 0.9561, Accuracy: 76.26%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'bedrooms_plus', 'washrooms', 'exterior', 'bedrooms_total', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 23
+*******************************************
+Performing RFE with 22 features
+Training the model
+Evaluating the model
+MSE: 14132260321.94, RMSE: 118879.18, MAE: 40296.91, MAPE: 12.79%, R^2: 0.9551, Accuracy: 76.18%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'bedrooms_plus', 'washrooms', 'exterior', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 22
+*******************************************
+Performing RFE with 21 features
+Training the model
+Evaluating the model
+MSE: 14239216400.56, RMSE: 119328.19, MAE: 40858.49, MAPE: 12.95%, R^2: 0.9548, Accuracy: 75.60%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'washrooms', 'exterior', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 21
+*******************************************
+Performing RFE with 20 features
+Training the model
+Evaluating the model
+MSE: 20456575539.56, RMSE: 143026.49, MAE: 41042.00, MAPE: 12.94%, R^2: 0.9350, Accuracy: 75.74%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'washrooms', 'exterior', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 20
+*******************************************
+Performing RFE with 19 features
+Training the model
+Evaluating the model
+MSE: 16617964516.75, RMSE: 128910.68, MAE: 40104.05, MAPE: 11.80%, R^2: 0.9472, Accuracy: 76.93%
+selected features: ['lotdepth', 'brokerage', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 19
+*******************************************
+Performing RFE with 18 features
+Training the model
+Evaluating the model
+MSE: 15176802568.12, RMSE: 123194.17, MAE: 40160.53, MAPE: 12.01%, R^2: 0.9518, Accuracy: 76.83%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 18
+*******************************************
+Performing RFE with 17 features
+Training the model
+Evaluating the model
+MSE: 14595615195.30, RMSE: 120812.31, MAE: 40668.70, MAPE: 13.14%, R^2: 0.9536, Accuracy: 76.00%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 17
+*******************************************
+Performing RFE with 16 features
+Training the model
+Evaluating the model
+MSE: 19360964552.44, RMSE: 139143.68, MAE: 39474.43, MAPE: 11.82%, R^2: 0.9385, Accuracy: 78.01%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'style', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 16
+*******************************************
+Performing RFE with 15 features
+Training the model
+Evaluating the model
+MSE: 26527468850.56, RMSE: 162872.55, MAE: 40917.70, MAPE: 12.37%, R^2: 0.9157, Accuracy: 76.10%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 15
+*******************************************
+Performing RFE with 14 features
+Training the model
+Evaluating the model
+MSE: 25618743943.27, RMSE: 160058.56, MAE: 40407.32, MAPE: 11.83%, R^2: 0.9186, Accuracy: 76.94%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 14
+*******************************************
+Performing RFE with 13 features
+Training the model
+Evaluating the model
+MSE: 13193554761.90, RMSE: 114863.20, MAE: 39193.71, MAPE: 12.01%, R^2: 0.9581, Accuracy: 77.71%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 13
+*******************************************
+Performing RFE with 12 features
+Training the model
+Evaluating the model
+MSE: 34724049866.22, RMSE: 186343.90, MAE: 39251.34, MAPE: 11.51%, R^2: 0.8897, Accuracy: 77.40%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 12
+*******************************************
+Performing RFE with 11 features
+Training the model
+Evaluating the model
+MSE: 11427677645.40, RMSE: 106900.32, MAE: 38385.00, MAPE: 11.17%, R^2: 0.9637, Accuracy: 77.29%
+selected features: ['lotdepth', 'community', 'lat', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces']
+Features count: 11
+*******************************************
+Performing RFE with 10 features
+Training the model
+Evaluating the model
+MSE: 11056861692.58, RMSE: 105151.61, MAE: 42909.17, MAPE: 13.15%, R^2: 0.9649, Accuracy: 73.03%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces']
+Features count: 10
+*******************************************
+Performing RFE with 9 features
+Training the model
+Evaluating the model
+MSE: 10569607148.91, RMSE: 102808.59, MAE: 42671.44, MAPE: 12.52%, R^2: 0.9664, Accuracy: 73.07%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms']
+Features count: 9
+*******************************************
+Performing RFE with 8 features
+Training the model
+Evaluating the model
+MSE: 10571561283.24, RMSE: 102818.10, MAE: 43172.61, MAPE: 12.73%, R^2: 0.9664, Accuracy: 72.84%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms']
+Features count: 8
+*******************************************
+Performing RFE with 7 features
+Training the model
+Evaluating the model
+MSE: 14102808967.36, RMSE: 118755.25, MAE: 49008.67, MAPE: 14.04%, R^2: 0.9552, Accuracy: 70.21%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude']
+Features count: 7
+*******************************************
+Performing RFE with 6 features
+Training the model
+Evaluating the model
+MSE: 18010258444.94, RMSE: 134202.30, MAE: 50671.47, MAPE: 15.13%, R^2: 0.9428, Accuracy: 70.58%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'sold_price', 'longitude']
+Features count: 6
+*******************************************
+Performing RFE with 5 features
+Training the model
+Evaluating the model
+MSE: 31443551493.85, RMSE: 177323.30, MAE: 74345.65, MAPE: 24.93%, R^2: 0.9001, Accuracy: 61.90%
+selected features: ['lotdepth', 'community', 'washrooms', 'sqft', 'sold_price']
+Features count: 5
+*******************************************
+Performing RFE with 4 features
+Training the model
+Evaluating the model
+MSE: 39597033407.33, RMSE: 198990.03, MAE: 77426.52, MAPE: 25.70%, R^2: 0.8742, Accuracy: 62.07%
+selected features: ['lotdepth', 'washrooms', 'sqft', 'sold_price']
+Features count: 4
+*******************************************
+Performing RFE with 3 features
+Training the model
+Evaluating the model
+MSE: 62086011233.60, RMSE: 249170.65, MAE: 131549.86, MAPE: 38.54%, R^2: 0.8027, Accuracy: 26.99%
+selected features: ['lotdepth', 'washrooms', 'sqft']
+Features count: 3
+*******************************************
+Performing RFE with 2 features
+Training the model
+Evaluating the model
+MSE: 107401893313.64, RMSE: 327722.28, MAE: 150341.58, MAPE: 44.68%, R^2: 0.6588, Accuracy: 25.02%
+selected features: ['washrooms', 'sqft']
+Features count: 2
+******************************************************
+Optimal Features Count: 11, Features: ['lotdepth', 'community', 'lat', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'longitude', 'rooms_plus', 'rooms', 'garage_spaces']Loading dataset from Google Drive.
+Testing log file
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Initializing XGBRegressor model with random state 42
+Performing Recursive Feature Elimination with 10 features
+Features count: 10, Selected Features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'rooms_plus', 'rooms', 'parking_spaces']
+Transforming dataset using RFE
+Transforming dataset using RFE
+Training the model
+Evaluating the model
+MSE: 14994770058.84, RMSE: 122453.13, MAE: 56075.07, MAPE: 19.59%, R^2: 0.9524, Accuracy: 64.68%
+******************************************************
+******************************************************
+******************************************************
+*******************************************
+Performing RFE with 22 features
+Training the model
+Evaluating the model
+MSE: 16146096689.85, RMSE: 127067.29, MAE: 55013.91, MAPE: 19.33%, R^2: 0.9487, Accuracy: 65.21%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'exterior', 'bedrooms_total', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'basement', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 22
+*******************************************
+Performing RFE with 21 features
+Training the model
+Evaluating the model
+MSE: 17090519594.60, RMSE: 130730.71, MAE: 55137.25, MAPE: 19.49%, R^2: 0.9457, Accuracy: 65.48%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'exterior', 'bedrooms_total', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 21
+*******************************************
+Performing RFE with 20 features
+Training the model
+Evaluating the model
+MSE: 16670408587.08, RMSE: 129113.94, MAE: 55141.32, MAPE: 18.25%, R^2: 0.9470, Accuracy: 65.83%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'bedrooms_total', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 20
+*******************************************
+Performing RFE with 19 features
+Training the model
+Evaluating the model
+MSE: 16770830454.72, RMSE: 129502.24, MAE: 55720.79, MAPE: 19.50%, R^2: 0.9467, Accuracy: 64.93%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'bedrooms', 'kitchens', 'parking_spaces']
+Features count: 19
+*******************************************
+Performing RFE with 18 features
+Training the model
+Evaluating the model
+MSE: 17802792357.28, RMSE: 133427.11, MAE: 54979.79, MAPE: 18.67%, R^2: 0.9434, Accuracy: 66.26%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'total_parking_spaces', 'garage_type', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 18
+*******************************************
+Performing RFE with 17 features
+Training the model
+Evaluating the model
+MSE: 19971103518.53, RMSE: 141319.15, MAE: 55551.75, MAPE: 19.45%, R^2: 0.9365, Accuracy: 65.54%
+selected features: ['lotdepth', 'brokerage', 'community', 'bedrooms_plus', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 17
+*******************************************
+Performing RFE with 16 features
+Training the model
+Evaluating the model
+MSE: 16487403571.56, RMSE: 128403.28, MAE: 55597.68, MAPE: 18.81%, R^2: 0.9476, Accuracy: 65.18%
+selected features: ['lotdepth', 'community', 'bedrooms_plus', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 16
+*******************************************
+Performing RFE with 15 features
+Training the model
+Evaluating the model
+MSE: 16628518886.45, RMSE: 128951.61, MAE: 55227.58, MAPE: 19.50%, R^2: 0.9472, Accuracy: 65.46%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'kitchens', 'parking_spaces']
+Features count: 15
+*******************************************
+Performing RFE with 14 features
+Training the model
+Evaluating the model
+MSE: 15474155877.12, RMSE: 124395.16, MAE: 54945.49, MAPE: 20.02%, R^2: 0.9508, Accuracy: 65.33%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features count: 14
+*******************************************
+Performing RFE with 13 features
+Training the model
+Evaluating the model
+MSE: 15685628205.46, RMSE: 125242.28, MAE: 55058.37, MAPE: 18.85%, R^2: 0.9502, Accuracy: 65.79%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'parking_spaces']
+Features count: 13
+*******************************************
+Performing RFE with 12 features
+Training the model
+Evaluating the model
+MSE: 16389508360.82, RMSE: 128021.52, MAE: 55223.17, MAPE: 19.70%, R^2: 0.9479, Accuracy: 66.00%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'style', 'rooms_plus', 'rooms', 'parking_spaces']
+Features count: 12
+*******************************************
+Performing RFE with 11 features
+Training the model
+Evaluating the model
+MSE: 15726752242.66, RMSE: 125406.35, MAE: 55191.88, MAPE: 20.92%, R^2: 0.9500, Accuracy: 64.87%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'rooms_plus', 'rooms', 'parking_spaces']
+Features count: 11
+*******************************************
+Performing RFE with 10 features
+Training the model
+Evaluating the model
+MSE: 14994770058.84, RMSE: 122453.13, MAE: 56075.07, MAPE: 19.59%, R^2: 0.9524, Accuracy: 64.68%
+selected features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'rooms_plus', 'rooms', 'parking_spaces']
+Features count: 10
+*******************************************
+Performing RFE with 9 features
+Training the model
+Evaluating the model
+MSE: 17783458121.51, RMSE: 133354.63, MAE: 57272.45, MAPE: 19.70%, R^2: 0.9435, Accuracy: 65.81%
+selected features: ['lotdepth', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'rooms_plus', 'rooms', 'parking_spaces']
+Features count: 9
+*******************************************
+Performing RFE with 8 features
+Training the model
+Evaluating the model
+MSE: 23922830496.52, RMSE: 154670.07, MAE: 58496.39, MAPE: 19.57%, R^2: 0.9240, Accuracy: 65.64%
+selected features: ['lotdepth', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'rooms', 'parking_spaces']
+Features count: 8
+*******************************************
+Performing RFE with 7 features
+Training the model
+Evaluating the model
+MSE: 21738532472.22, RMSE: 147439.93, MAE: 60274.29, MAPE: 21.23%, R^2: 0.9309, Accuracy: 65.21%
+selected features: ['lotdepth', 'washrooms', 'sqft', 'lotfront', 'sold_price', 'rooms', 'parking_spaces']
+Features count: 7
+*******************************************
+Performing RFE with 6 features
+Training the model
+Evaluating the model
+MSE: 25688646922.76, RMSE: 160276.78, MAE: 64544.21, MAPE: 23.14%, R^2: 0.9184, Accuracy: 63.44%
+selected features: ['lotdepth', 'washrooms', 'sqft', 'sold_price', 'rooms', 'parking_spaces']
+Features count: 6
+*******************************************
+Performing RFE with 5 features
+Training the model
+Evaluating the model
+MSE: 41143203158.47, RMSE: 202837.87, MAE: 78132.94, MAPE: 26.03%, R^2: 0.8693, Accuracy: 61.92%
+selected features: ['lotdepth', 'washrooms', 'sqft', 'sold_price', 'parking_spaces']
+Features count: 5
+*******************************************
+Performing RFE with 4 features
+Training the model
+Evaluating the model
+MSE: 39597033407.33, RMSE: 198990.03, MAE: 77426.52, MAPE: 25.70%, R^2: 0.8742, Accuracy: 62.07%
+selected features: ['lotdepth', 'washrooms', 'sqft', 'sold_price']
+Features count: 4
+*******************************************
+Performing RFE with 3 features
+Training the model
+Evaluating the model
+MSE: 62086011233.60, RMSE: 249170.65, MAE: 131549.86, MAPE: 38.54%, R^2: 0.8027, Accuracy: 26.99%
+selected features: ['lotdepth', 'washrooms', 'sqft']
+Features count: 3
+*******************************************
+Performing RFE with 2 features
+Training the model
+Evaluating the model
+MSE: 107401893313.64, RMSE: 327722.28, MAE: 150341.58, MAPE: 44.68%, R^2: 0.6588, Accuracy: 25.02%
+selected features: ['washrooms', 'sqft']
+Features count: 2
+******************************************************
+Optimal Features Count: 14, Features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'type', 'kitchens_plus', 'style', 'rooms_plus', 'rooms', 'garage_spaces', 'parking_spaces']
+Features and target defined. target = list_price
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Testing log file
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Initializing XGBRegressor model with random state 42
+Performing Recursive Feature Elimination with 10 features
+Features count: 10, Selected Features: ['lotdepth', 'community', 'washrooms', 'total_parking_spaces', 'sqft', 'lotfront', 'sold_price', 'rooms_plus', 'rooms', 'parking_spaces']
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Testing log file
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Loading dataset from Google Drive.
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Testing log file
+Loading dataset from Google Drive.
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2
+Features and target defined. target = list_price
+Splitting data into training and testing sets with test size 0.2

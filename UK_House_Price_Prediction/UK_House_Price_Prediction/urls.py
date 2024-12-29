@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from price_predictor.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index', index, name='index'),
+    path('predict/', PredictPropertyView.as_view(), name='predict_property'),
 ]
