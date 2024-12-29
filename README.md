@@ -11,7 +11,7 @@ Ensure you have the following installed on your system:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
+git clone https://github.com/syedalir1234/UK-House-Price-Prediction.git
 cd UK_HOUSE_PRICE_PREDICTION
 ```
 
